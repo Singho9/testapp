@@ -1,0 +1,39 @@
+<div class="frame-parent">
+    <div class="frame-group">
+      <div class="vector-parent">
+        <img class="vector-icon" alt="" src="assets/public/vector.svg" />
+
+        <b class="medics">Medics</b>
+      </div>
+      <div class="login-parent">
+        <div class="login">Login</div>
+        <div class="input-fields-parent">
+          <div class="input-fields">
+    
+            <div class="input">
+                <div class="rounded-rectangle">
+                    <mat-form-field class="rounded-rectangle" >
+                      <mat-label>Enter your email</mat-label>
+                      <mat-icon matPrefix>email</mat-icon>
+                      <input matInput placeholder="Email" [(ngModel)]="email">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="input-icon">
+                <div class="rounded-rectangle">
+                    <mat-form-field class="rounded-rectangle" >
+                      <mat-label>Enter your password</mat-label>
+                      <mat-icon matPrefix>lock</mat-icon>
+                      <input type="password" matInput [(ngModel)]="password" placeholder="password">
+                    </mat-form-field>
+                </div>
+            </div>
+          </div>
+          <div class="rectangle-parent" (click)="login()">
+            <div class="group-child"></div>
+            <div class="button">Login</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
