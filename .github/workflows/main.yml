@@ -3,15 +3,8 @@ permissions:
   contents: read
   pull-requests: write
 on:
-  issue_comment:
-    types: [created, edited]
   pull_request_review_comment:
     types: [created, deleted, edited]
-  pull_request_review:
-    types: [submitted, edited, dismissed]
-  pull_request_target:
-    types: [assigned, opened, synchronize, reopened]
-
 jobs:
   code-review:
     runs-on: ubuntu-latest
