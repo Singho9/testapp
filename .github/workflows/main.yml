@@ -7,6 +7,8 @@ on:
     types: [created, edited]
   pull_request_review_comment:
     types: [created, deleted, edited]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
 
 jobs:
   code-review:
