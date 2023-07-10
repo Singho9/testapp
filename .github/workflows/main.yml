@@ -9,6 +9,8 @@ on:
     types: [created, deleted, edited]
   pull_request_review:
     types: [submitted, edited, dismissed]
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
 
 jobs:
   code-review:
