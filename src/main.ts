@@ -8,15 +8,20 @@ if (environment.production) {
   enableProdMode();
 }
 function factorial(n) {
-  // Base case: factorial of 0 or 1 is 1
+  if (n < 0) {
+    throw new Error("Factorial of negative numbers is undefined");
+  }
+
   if (n === 0 || n === 1) {
     return 1;
   }
 
- 
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
 
-  // Recursive case: factorial of n is n multiplied by factorial of (n-1)
-  return n * factorial(n - 1);
+  return result;
 }
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
